@@ -2,12 +2,18 @@
 
 /* --- VARIABLES Y RESET --- */
 :root {
-  --bs-primary: #1e30f3;
-  --bs-secondary: #e21e80;
+  --bs-primary: #333333;
+  --bs-secondary: #f0002b;
   --bs-success: #25D366;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --text-gradient: linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+  --text-gradient: linear-gradient(315deg, #f49e39 0%, #f0002b 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,6 +27,7 @@ body {
 .text-gradient {
   background: var(--text-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -123,5 +130,23 @@ iframe {
 }
 .profile-img {
   width: 100%;
-  border-radius: 50%;
+  height: auto;
+  object-fit: cover; 
 }
+
+.text-red{
+  color: var(--bs-secondary);
+}
+
+.badge {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.badge-news {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+}
+
